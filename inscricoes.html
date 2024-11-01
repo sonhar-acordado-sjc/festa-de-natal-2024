@@ -12,14 +12,21 @@
     <meta property="og:url" content="https://sonhar-acordado-sjc.github.io/festa-de-natal-2024/inscricoes.html" /> <!-- Substitua pela URL do seu site -->
     <meta property="og:type" content="website" />
 
-    <link rel="icon" href="./assets/icon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5512992195271/?t=Ol%C3%A1,%20estou%20fazendo%20a%20inscri%C3%A7%C3%A3o%20para%20a%20Festa%20de%20Natal%20e%20preciso%20de%20ajuda."></script>
 </head>
 <body>
-   <img src="./assets/capa.jpg" class="img-fluid" alt="Capa da Festa de Natal">
+   <picture>
+      <!-- Carregar imagem maior para telas com mais de 1700px de largura -->
+      <source media="(min-width: 1600px)" srcset="./assets/capa_1.jpg">
+      <!-- Carregar imagem alternativa para telas menores que 1700px de largura -->
+      <source media="(max-width: 1599px)" srcset="./assets/capa.jpg">
+      <!-- Fallback para navegadores antigos que não suportam <picture> -->
+      <img src="./assets/capa.jpg" class="img-fluid" alt="Capa da Festa de Natal">
+  </picture>
    
     <div class="container my-4 pt-3 pb-3 shadow rounded">
         <header class="header text-center bg-danger text-white p-4 rounded">
@@ -82,7 +89,7 @@
                   <img src="./assets/voluntario-apoio.jpg" class="card-img-top" alt="Voluntário apoio">
                   <div class="card-body">
                     <h5 class="card-title">Vou ser do time de apoio</h5>
-                    <p class="card-text">Quero fazer a diferença e tornar essa festa ainda mais mágica!</p>
+                    <p class="card-text text-crianca">Quero fazer a diferença e tornar essa festa ainda mais mágica!</p>
                     <a href="https://forms.gle/fWiqGD5NuExmZ2b59" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Me inscrever</a>
                   </div>
                 </div>
